@@ -1,0 +1,11 @@
+﻿@model ComposedPageViewModel<ExploreBlogPage, ExploreBlogPageViewModel>
+
+@{
+	Layout = "Master.cshtml";
+}
+
+
+@foreach(var item in Model.ViewModel.ExploreBlogDetailPages)
+{
+	<p>@item.Title</p>
+}

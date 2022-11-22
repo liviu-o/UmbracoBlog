@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="~/css/output.css"/>
+	@*@await Html.PartialAsync("~/Views/Partials/metaData.cshtml")*@
+    <title>Simple Tailwind Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+    <body class="top-0 h-full overflow-scroll">
+    <!-- Hero Section -->
+        
+		@* @await Html.PartialAsync("~/Views/Partials/navigation.cshtml") *@
+        @await Component.InvokeAsync("Navigation")
+
+		@RenderBody()
+
+        @*@await Html.PartialAsync("~/Views/Partials/footer.cshtml")*@
+    </body>
+</html>

@@ -1,0 +1,33 @@
+@model BannerRow
+
+@{
+    if (Model.Image == null) return;
+}
+
+<section class="w-full">
+    <div class="flex items-end justify-end text-white max-w-5xl w-full h-full pt-32">
+        <div class="w-8/12 h-full">
+            <a href="#"><img src="@Model.Image.Url()" alt="@Model.Title"></a>
+        </div>
+        <div class="bg-purple h-9/12 w-5/12">
+            <div class="flex flex-col justify-center py-24 pl-40 pr-8">
+                <h3 class="text-3xl ">
+                    @if (Model.Link != null)
+                    {
+                        @:<a href="@Model.Link.Url" target="@Model.Link.Target" title="@Model.Link.Name">
+                    }
+                        LIFE THROUGH A ROYAL LENS
+                    </a>
+                    @if (Model.Link != null)
+                    {
+                        @:</a>
+                    }
+                </h3>
+                <p class="font-sans font-bold text-left text-3xl my-10">Last chance: until 30 October</p>
+                <p class="font-sans text-left text-3xl pb-10">@Model.Description</p>
+                <a href="#" class="w-64 bg-white text-black text-center text-xl px-14 py-4 button-radius border-black
+                                font-bold duration-150 border border-solid"><span class="">Learn more <i class="fa-solid fa-chevron-right"></i></span></a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,72 @@
+@model NavigationViewModel
+
+
+<nav id="hero" class="flex flex-col items-center justify-center min-h-40 text-white bg-primary">
+
+            <!-- First Nav -->
+            
+            
+           <div class="container flex flex-col justify-center items-center">
+                <div class="relative block w-full h-16 bg-primary">
+                    <div class="absolute h-16 bg-secondary right-96">
+                        <ul class="flex h-full items-center justify-end px-6 text-white">
+             @if(Model.MainNavigation != null && Model.MainNavigation.Any())
+                {
+                    foreach(var item in Model.MainNavigation)
+                    {
+                        var hasIconClass = item.IconClass != null && item.IconClass.Any();
+                        if(item.Title != null && item.Title.Any()) {
+                            <li class="px-2.5 border-r-1 mt-4"><a href="#" class="px-4 py-2.5 text-xl">@item.Title</a></li>
+                         } else
+                        {
+
+                            <li class="px-2.5 border-r-1 mt-4"><a href="@item.Link.Url" class="px-4 py-2.5 text-xl"><i class="@item.IconClass"></i></a></li>
+                        }
+
+
+                    }
+                }
+                            <button class="absolute -right-20 w-16 h-16 ">Search</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Second nav -->
+
+            <div class="container flex flex-col justify-center items-center h-40">
+                <div class="relative flex items-end justify-end w-full h-32 bg-primary ml-56">
+                        <a href="#" class="mr-40">
+                            <img src="/assets/img/logo.png" alt="">
+                        </a>
+                    <div class="mr-96 max-w-5xl h-16">
+                        <ul class="flex h-full items-end px-6 text-white font-sans">
+            @if(Model.SecondNavigation != null && Model.SecondNavigation.Any())
+                {
+                    foreach(var item in Model.SecondNavigation)
+                    {
+                        <li class="px-2.5 pb-2 border-r-1"><a href="@item.Link" class="px-4 py-2.5 text-2xl font-bold">@item.Title</a></li>
+                    }
+                }
+                            <button class="px-2.5 pb-3">Buy Tickets</button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Third nav -->
+            <div class="flex flex-col w-full justify-center items-center h-24 bg-secondary">
+                <div class="relative flex items-center justify-center w-full h-32">
+                    <div class="h-16">
+                        <ul class="flex h-full items-center text-white font-sans w-full">
+                            @if(Model.ThirdNavigation != null && Model.ThirdNavigation.Any())
+                            {
+                                foreach(var item in Model.ThirdNavigation)
+                                {
+                                    <li class="px-2.5"><a href="#" class="px-4 py-2.5 text-2xl font-bold uppercase">@item.Title</a></li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>

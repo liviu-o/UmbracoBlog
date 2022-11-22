@@ -1,0 +1,90 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    font-size: 62.5%;
+    background-color: #f3f3f3;
+    font-family: 'Open sans','Helvetica','Arial',sans-serif;
+    margin: 0 auto;
+}
+
+.text-xl {
+    font-size: 1.3rem;
+}
+
+.border-r-1 {
+    border-right: 1px solid rgba(255,255,255,.3);
+}
+
+.border-r-black-1 {
+    position: relative;
+}
+
+.border-r-black-1:after {
+    content: " ";
+    position: absolute;
+    border-left: 1px solid black;
+    top: 20%;
+    right: 0;
+    margin-left: 8px;
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.border-t-black-1 {
+    position: relative;
+}
+
+.border-t-black-1:after {
+    content: " ";
+    position: absolute;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    top: 0;
+    width: 60%;
+}
+
+.border-b-black-1 {
+    position: relative;
+}
+
+.border-b-black-1:after {
+    content: " ";
+    position: absolute;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    bottom: 0;
+    width: 80%;
+}
+
+.leftt-1\/5 {
+    margin-left: 85%;
+}
+
+.img-height {
+    height: 515px;
+}
+
+.text-shadow {
+    text-shadow: 0 0 30px #000; 
+}
+
+.max-w-5xl {
+    max-width: 1024px;
+}
+
+.p-subheading-w {
+    width: 700px;
+}
+
+.button-radius {
+    border-radius: 5rem;
+}

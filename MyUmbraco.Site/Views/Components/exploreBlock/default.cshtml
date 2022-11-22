@@ -1,0 +1,39 @@
+@model PublishedElementViewModel<ExploreBlock, ExploreBlockViewModel>
+
+
+<div class="w-2/6">
+    <div class="w-full min-h-auto">
+        <div class="bg-white">
+            <a href="#"><img src="@Model.ViewModel.Page.Image.Url()" alt=""></a>
+            <div class="text-black text-xl px-12 mt-4 font-sans uppercase">
+                <span class="border-r-black-1 inline-block pr-3">Families</span>
+                <span class="pl-2">@Model.ViewModel.Page.Title<span>
+            </div>
+            <div class="text-black text-3xl px-12 mt-5 font-sans font-bold uppercase">
+                <h3>
+                    @Model.ViewModel.Page.Description
+                    <i class="fa-solid fa-chevron-right"></i>
+                </h3>
+            </div>
+            <div>
+                <p class="text-black font-normal text-2xl px-12 mt-4 font-sans uppercase">Explore Henry VIII's notoriously haunted palace this Halloween.</p>
+            </div>
+            <div class="flex items-center text-black text-3xl mt-5 font-sans font-bold uppercase px-12 py-6 border-t-black-1 border-b-black-1">
+                <i class="fa-solid fa-solid fa-lg fa-calendar-days"></i>
+                <p class="text-black font-normal text-xl font-sans pl-4"> 22 - 30 October</p>
+            </div>
+            <div class="flex items-center text-black text-3xl mt-5 font-sans font-bold px-12 py-6">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="text-black font-normal text-xl font-sans pl-4"> Hampton Court Palace</p>
+            </div>
+            <div class="flex items-center text-black text-3xl mt-5 font-sans font-bold px-12 py-6 border-t-black-1 border-b-black-1">
+                <i class="fa-solid fa-ticket-simple"></i>
+                <p class="text-black font-normal text-xl font-sans pl-4"> Included in palace admission (members go free)</p>
+            </div>
+            <div class="flex justify-center items-center h-full mt-10 w-full px-14 py-4">
+                <a href="#" class="w-full text-white bg-black text-center text-xl px-14 py-4 button-radius border-black
+                        font-bold duration-150 border border-solid"><span class="flex justify-between items-center text-3xl font-sans">Learn more <i class="fa-solid fa-chevron-right"></i></span></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿@model HomePage
+
+@{
+	Layout = "Master.cshtml";
+}
+	
+ <header style="background-image: url('@Model.Image.Url()');" class="flex items-center justify-center img-height bg-no-repeat bg-cover bg-center">
+            <div class="flex flex-col items-center justify-center text-white max-w-5xl w-full h-full py-48 px-16">
+                <div>
+                    <h1 class="text-9xl font-bold text-shadow text-center font-sans pb-10">@Model.Title</h1>
+                </div>
+                <div class="p-subheading-w">
+                    <p class="text-center text-6xl text-shadow font-sans font-bold">@Model.Subtitle</p>
+                </div>
+				
+            </div>
+</header>
+
+<!-- Main Content-->
+<main class="mb-4">
+	<div class="flex justify-center items-center">
+		@Html.GetBlockListHtml(Model.MainContent)
+	</div>
+    
+    <div class="flex flex-column">
+         @Html.GetBlockListHtml(Model.ExploreDetailSection)
+    </div>
+</main>
