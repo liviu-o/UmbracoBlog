@@ -2,6 +2,24 @@
 module.exports = {
   content: ["./Views/**/*.cshtml"],
   theme: {
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '6xl': ['1.875rem', {
+        lineHeight: '2.25rem',
+        letterSpacing: '-0.02em',
+        fontWeight: '700',
+      }],
+      '8xl': ['1.875rem', {
+        lineHeight: '2.25rem',
+        letterSpacing: '-0.02em',
+        fontWeight: '700',
+      }],
+    },
     screens: {
       sm: '480px',
       md: '768px',
@@ -13,6 +31,7 @@ module.exports = {
         sans: ['Roboto Condensed','Open sans','Helvetica','Arial', 'sans-serif'],
         alata: ['Alata'],
       },
+      
       letterSpacing: {
         widest: '.3em',
       },
