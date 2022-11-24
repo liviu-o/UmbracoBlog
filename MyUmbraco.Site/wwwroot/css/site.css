@@ -83,3 +83,11 @@ html {
 .button-radius {
     border-radius: 5rem;
 }
+
+.image-card-width {
+    width: 30rem;
+}
+
+.flex-between {
+    justify-content: space-between;
+}

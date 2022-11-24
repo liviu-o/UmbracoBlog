@@ -9,12 +9,17 @@ module.exports = {
       '2xl': '1.563rem',
       '3xl': '1.953rem',
       '4xl': '2.441rem',
+      '5xl': ['1.875rem', {
+        lineHeight: '2.25rem',
+        letterSpacing: '-0.02em',
+        fontWeight: '700',
+      }],
       '6xl': ['1.875rem', {
         lineHeight: '2.25rem',
         letterSpacing: '-0.02em',
         fontWeight: '700',
       }],
-      '8xl': ['1.875rem', {
+      '8xl': ['4rem', {
         lineHeight: '2.25rem',
         letterSpacing: '-0.02em',
         fontWeight: '700',

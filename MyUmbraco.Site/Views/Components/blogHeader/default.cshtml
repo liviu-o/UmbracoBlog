@@ -1,0 +1,20 @@
+@model BlogHeader
+
+@{
+    if (Model.Image == null) return;
+}
+
+<div style="background-image: url('@Model.Image.Url()');" class="img-height bg-no-repeat bg-cover bg-center p-subheading-w">
+            <div class="text-white max-w-5xl w-full h-full">
+                <div>
+                    <h1 class="text-8xl font-bold text-shadow font-sans">@Model.Title</h1>
+                </div>
+                <div class="p-subheading-w">
+                    <p class="text-6xl text-shadow font-sans font-bold">@Model.Subtitle</p>
+                </div>
+                <div>
+                    <p>@Model.Description</p>
+                </div>
+				
+            </div>
+</div>

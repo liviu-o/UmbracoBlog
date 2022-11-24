@@ -12428,19 +12428,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admlcauia1\\.nuget\\packages\\": {}
+    "C:\\Users\\Liviu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admlcauia1\\Desktop\\UmbracoBlog1-master\\MyUmbraco.Core\\MyUmbraco.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Liviu\\Desktop\\UmbracoBlog\\MyUmbraco.Core\\MyUmbraco.Core.csproj",
       "projectName": "MyUmbraco.Core",
-      "projectPath": "C:\\Users\\admlcauia1\\Desktop\\UmbracoBlog1-master\\MyUmbraco.Core\\MyUmbraco.Core.csproj",
-      "packagesPath": "C:\\Users\\admlcauia1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admlcauia1\\Desktop\\UmbracoBlog1-master\\MyUmbraco.Core\\obj\\",
+      "projectPath": "C:\\Users\\Liviu\\Desktop\\UmbracoBlog\\MyUmbraco.Core\\MyUmbraco.Core.csproj",
+      "packagesPath": "C:\\Users\\Liviu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Liviu\\Desktop\\UmbracoBlog\\MyUmbraco.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admlcauia1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Liviu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12454,8 +12454,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\admlcauia1\\Desktop\\UmbracoBlog1-master\\MyUmbraco.Models\\MyUmbraco.Models.csproj": {
-              "projectPath": "C:\\Users\\admlcauia1\\Desktop\\UmbracoBlog1-master\\MyUmbraco.Models\\MyUmbraco.Models.csproj"
+            "C:\\Users\\Liviu\\Desktop\\UmbracoBlog\\MyUmbraco.Models\\MyUmbraco.Models.csproj": {
+              "projectPath": "C:\\Users\\Liviu\\Desktop\\UmbracoBlog\\MyUmbraco.Models\\MyUmbraco.Models.csproj"
             }
           }
         }

@@ -2,13 +2,13 @@
 
 <section class="flex justify-center py-16">
     <div class="max-w-5xl w-full h-full">
-        <h2 class="uppercase text-black font-bold text-5xl font-sans"><span class="">@Model.Title<i class="fa-solid fa-chevron-right"></i></span></h2>
+        <h2 class="uppercase text-black font-bold text-7xl font-sans"><span class="">@Model.Title<i class="fa-solid fa-chevron-right"></i></span></h2>
     </div>
 </section>
 <!-- Cards -->
 
-<div class="flex justify-center items-center wrap h-full">
-    <div class="flex max-w-5xl">
+<div class="wrap h-full max-w-5xl mx-auto">
+    <div class="flex w-full flex-between">
         @Html.GetBlockListHtml(Model.ExploreBlocks)
     </div>
 </div>

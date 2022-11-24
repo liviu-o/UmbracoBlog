@@ -1,15 +1,12 @@
 @model PublishedElementViewModel<ExploreBlock, ExploreBlockViewModel>
 
-
-<div class="w-2/6">
-    <div class="w-full min-h-auto my-10">
-        <div class="bg-white">
-            <a href="#"><img src="@Model.ViewModel.Page.Image.Url()" class="px-4 mb-10" alt=""></a>
-            <div class="px-12 mt-4">
+    <div class="bg-white">
+        <div class="image-card-width">
+            <a href="#"><img src="@Model.ViewModel.Page.Image.Url()" class="mb-10" alt=""></a>
+            <div class="px-12 mt-4 pb-12">
                 <h3 class="text-black text-6xl font-bold uppercase font-sans my-10">@Model.ViewModel.Page.Title</h3>
                 <span class="text-2xl">@Model.ViewModel.Page.Date</span>
                 <p class="mt-10 text-2xl">@Model.ViewModel.Page.Description</p>
             </div>
         </div>
     </div>
-</div>

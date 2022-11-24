@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Explore Blog Page</summary>
 	[PublishedModel("exploreBlogPage")]
-	public partial class ExploreBlogPage : PublishedContentModel, IDescriptionProperty, ITitleProperty
+	public partial class ExploreBlogPage : PublishedContentModel, ITitleProperty
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -50,12 +50,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
-		/// Description: Enter Description
+		/// Main Heading
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("description")]
-		public virtual string Description => global::Umbraco.Cms.Web.Common.PublishedModels.DescriptionProperty.GetDescription(this, _publishedValueFallback);
+		[ImplementPropertyType("mainHeading")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel MainHeading => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "mainHeading");
 
 		///<summary>
 		/// Title: Enter Title

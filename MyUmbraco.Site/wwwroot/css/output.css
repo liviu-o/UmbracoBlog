@@ -648,8 +648,8 @@ video {
   width: 16rem;
 }
 
-.w-2\/6 {
-  width: 33.333333%;
+.w-80 {
+  width: 20rem;
 }
 
 .w-16 {
@@ -704,8 +704,8 @@ video {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-scroll {
-  overflow: scroll;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -796,11 +796,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -819,6 +814,11 @@ video {
 .px-2\.5 {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-2\.5 {
@@ -852,6 +852,10 @@ video {
   padding-right: 2rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -873,7 +877,7 @@ video {
 }
 
 .text-8xl {
-  font-size: 1.875rem;
+  font-size: 4rem;
   line-height: 2.25rem;
   letter-spacing: -0.02em;
   font-weight: 700;
@@ -999,6 +1003,14 @@ html {
 
 .button-radius {
   border-radius: 5rem;
+}
+
+.image-card-width {
+  width: 30rem;
+}
+
+.flex-between {
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
